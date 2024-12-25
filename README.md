@@ -16,6 +16,8 @@ unzip ./final_data.zip
 ```
 
 After unzipping, verify that the experiments folder exists and has the following structure:
+
+```bash
 experiments/
     cat2/
     compsed_edlora/
@@ -27,10 +29,12 @@ experiments/
     vase/
     watercolor/
     wearable_glasses/
-
+```
 These pre-trained models include the fused ED-LoRA, allowing you to perform inference directly using these models.
 ### For Single-concept Training
 All files required for single-concept training are located in the final_dataset folder. The folder structure is as follows:
+
+```bash
 final_dataset/
     captions/
     concept_image/
@@ -38,14 +42,20 @@ final_dataset/
     mask/
     merge_mask/
     prompts.json
+```
 
 captions/: Contains the prompts used for validation during training.
+
 concept_image/: Stores the source images for training.
+
 configs/: Contains the training configuration files.
+
 mask/: Holds the masks used for training.
+
 merge_mask/: Includes merged mask files used for inference.
 
 The detailed training configurations for single-concept training are located in the options folder.
+```bash
 options/train/EDLoRA/real/
     cat2.yml
     dag.yml
@@ -55,17 +65,18 @@ options/train/EDLoRA/real/
     vase.yml
     watercolor.yml
     wearable_glasses.yml
-
+```
 To train a single concept using ED-LoRA, use the train.sh shell script.
 
 ### For multiple concept ED-LoRA Fused
 Ensure that the following five configuration files are located in the datasets/data_cfgs/ directory:
+```bash
 datasets/data_cfgs/cat2_dog6_chilloutmix.json
 datasets/data_cfgs/cat2_wearable_glasses_watercolor_chilloutmix.json
 datasets/data_cfgs/dog_pet_cat1_dog6_chilloutmix.json
 datasets/data_cfgs/flower_1_vase_chilloutmix.json
 datasets/data_cfgs/merge_all_chilloutmix.json
-
+```
 To fuse multiple concept ED-LoRA, execute the fuse.sh shell script.
 ### For multiple concept Inference
 Use the inference.sh shell script to generate images based on the provided prompts.
