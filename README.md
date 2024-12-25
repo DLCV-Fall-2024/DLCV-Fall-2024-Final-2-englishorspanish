@@ -3,6 +3,10 @@
 ## Environment Setup
 To set up the required environment, please refer to the environment_setup.cmd file. Our codebase integrates functionalities from Mix-of-Show, GroundingDINO, and Segment Anything. The environment merges dependencies and configurations from these works.
 
+```bash
+source environment_setup.cmd
+```
+
 If you encounter any issues while following the installation process outlined in environment_setup.cmd, please don't hesitate to reach out to us for assistance.
 
 ## Prepared Dataset
