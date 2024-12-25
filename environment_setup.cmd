@@ -3,7 +3,7 @@ conda activate EnglishOrSpanish
 
 # GROUNDING DINO
 
-conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=11.8 -c pytorch -c 
+conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install nvidia/label/cuda-11.8.0::cuda-toolkit -y
 
 git clone https://github.com/IDEA-Research/GroundingDINO.git
