@@ -1,5 +1,5 @@
-conda create -n mixofshow_dinosam python=3.10 -y
-conda activate mixofshow_dinosam
+conda create -n EnglishOrSpanish python=3.10 -y
+conda activate EnglishOrSpanish
 
 # GROUNDING DINO
 
