@@ -15,7 +15,7 @@ Ensure that all the files are organized in the correct hierarchy before proceedi
 Download all the pre-trained models using the following command:
 
 ```bash
-gdown  1gOFtGczKR3ND7dLvPE4gw0Ge8hJEfrMc -o experiments.zip
+gdown 1gOFtGczKR3ND7dLvPE4gw0Ge8hJEfrMc -O experiments.zip
 unzip ./experiments.zip
 ```
 
