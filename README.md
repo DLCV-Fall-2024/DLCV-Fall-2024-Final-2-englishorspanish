@@ -11,8 +11,8 @@ Ensure that all the files are organized in the correct hierarchy before proceedi
 Download all the pre-trained models using the following command:
 
 ```bash
-gdown  1gOFtGczKR3ND7dLvPE4gw0Ge8hJEfrMc -o final_data.zip
-unzip ./final_data.zip
+gdown  1gOFtGczKR3ND7dLvPE4gw0Ge8hJEfrMc -o experiments.zip
+unzip ./experiments.zip
 ```
 
 After unzipping, verify that the experiments folder exists and has the following structure:
@@ -20,7 +20,7 @@ After unzipping, verify that the experiments folder exists and has the following
 ```bash
 experiments/
     cat2/
-    compsed_edlora/
+    composed_edlora/
     dog/
     dog6/
     flower_1/
