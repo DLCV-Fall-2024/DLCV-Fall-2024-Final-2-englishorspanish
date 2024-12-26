@@ -58,7 +58,7 @@ models:
   reg_full_identity: true
   use_mask_loss: true
   gradient_checkpoint: false
-  enable_xformers: true
+  enable_xformers: false
 
 # path
 path:
