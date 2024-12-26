@@ -6,7 +6,7 @@ To set up the required environment, please refer to the environment_setup.cmd fi
 ```bash
 source environment_setup.cmd
 ```
-
+Please note that this step may require some time.
 If you encounter any issues while following the installation process outlined in environment_setup.cmd, please don't hesitate to reach out to us for assistance.
 
 ## Prepared Dataset
@@ -15,10 +15,9 @@ Ensure that all the files are organized in the correct hierarchy before proceedi
 Download all the pre-trained models using the following command:
 
 ```bash
-gdown 1gOFtGczKR3ND7dLvPE4gw0Ge8hJEfrMc -O experiments.zip
-unzip ./experiments.zip
+bash download_ckpt.sh
 ```
-
+Please note that this step may require some time.
 After unzipping, verify that the experiments folder exists and has the following structure:
 
 ```bash
